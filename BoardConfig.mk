@@ -15,12 +15,12 @@
 include device/sony/tama/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := unknown
-ifneq (,$(filter %h8216,$(TARGET_PRODUCT)))
-TARGET_BOOTLOADER_BOARD_NAME := H8216
-else ifneq (,$(filter %h8266,$(TARGET_PRODUCT)))
-TARGET_BOOTLOADER_BOARD_NAME := H8266
+ifneq (,$(filter %h8416,$(TARGET_PRODUCT)))
+TARGET_BOOTLOADER_BOARD_NAME := H8416
+else ifneq (,$(filter %h9436,$(TARGET_PRODUCT)))
+TARGET_BOOTLOADER_BOARD_NAME := H9436
 else
-TARGET_BOOTLOADER_BOARD_NAME := H8216
+TARGET_BOOTLOADER_BOARD_NAME := H8416
 $(warning Unrecognized value for TARGET_PRODUCT: "$(TARGET_PRODUCT)", using default value: "$(TARGET_BOOTLOADER_BOARD_NAME)")
 endif
 
