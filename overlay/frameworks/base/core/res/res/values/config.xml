@@ -74,6 +74,9 @@
          that can be set by the user. -->
     <integer name="config_screenBrightnessDoze">5</integer>
 
+    <!-- Whether the always on display mode is available. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
