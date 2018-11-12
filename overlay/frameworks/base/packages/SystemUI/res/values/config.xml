@@ -37,4 +37,13 @@
 
     <!-- Doze: whether the double tap sensor reports 2D touch coordinates -->
     <bool name="doze_double_tap_reports_touch_coordinates">false</bool>
+
+    <!-- Whether to enable shifting of elements in the status bar and the navigation bar.
+         Should be enabled for OLED devices to reduce/prevent burn in on the status bar
+         and on the navigation bar and disabled for all other devices. -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
+
+    <!-- Amount of time in seconds to wait before shifting elements around when the burn-in
+         protection is enabled for status bar and navigation bar -->
+    <integer name="config_shift_interval">45</integer>
 </resources>
