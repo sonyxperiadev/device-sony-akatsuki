@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES := \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.software.verified_boot.xml:system/etc/permissions/android.software.verified_boot.xml
 
-#sensors
+# Sensors
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
     $(DEVICE_PATH)/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
@@ -86,6 +86,10 @@ PRODUCT_COPY_FILES += \
 # BT/Wifi patch file
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/firmware/wlan/qca_cld/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/bdwlan.bin
+
+# Atmel TS
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/vendor/firmware/touch_module_id_0x01.img:$(TARGET_COPY_OUT_VENDOR)/firmware/touch_module_id_0x01.img
 
 # Device Init
 PRODUCT_PACKAGES += \
