@@ -120,7 +120,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=560 \
-    ro.usb.pid_suffix=1FA
+    ro.usb.pid_suffix=1FF
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/tama/platform.mk)
