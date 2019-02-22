@@ -97,10 +97,6 @@ PRODUCT_PACKAGES += \
     init.recovery.akatsuki \
     init.akatsuki
 
-# Simple PowerHAL
-PRODUCT_PACKAGES += \
-    power.akatsuki
-
 # NFC config
 PRODUCT_PACKAGES += \
     nfc_nci.akatsuki
