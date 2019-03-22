@@ -27,9 +27,6 @@ endif
 # Platform
 PRODUCT_PLATFORM := tama
 
-# Keymaster 4
-TARGET_KEYMASTER_V4 := true
-
 # NFC
 NXP_CHIP_FW_TYPE := PN553
 
