@@ -12,6 +12,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_h8416.mk \
-                     $(LOCAL_DIR)/aosp_h9436.mk \
-                     $(LOCAL_DIR)/aosp_h9493.mk
+# DualSim
+PRODUCT_DEVICE_DS := true
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.radio.multisim.config=dsds \
+    ro.telephony.default_network=9,9 \
+    persist.vendor.radio.block_allow_data=0
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/akatsuki/aosp_h8416.mk)
+
+PRODUCT_NAME := aosp_h9493
+PRODUCT_DEVICE := akatsuki
+PRODUCT_MODEL := Xperia XZ3 Dual (AOSP)
+PRODUCT_BRAND := Sony
+PRODUCT_MANUFACTURER := Sony
+
