@@ -18,6 +18,9 @@ DEVICE_PATH := device/sony/akatsuki
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/akatsuki/overlay
 
+# Vibrator
+TARGET_VIBRATOR_V1_2 := true
+
 # Device Specific Permissions
 PRODUCT_COPY_FILES := \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
